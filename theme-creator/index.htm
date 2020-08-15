@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../themes/shared/material-design-iconic-font/css/material-design-iconic-font.css" />
+    <link id="theme-css-link" rel="stylesheet" href="../themes/Light/Light.css" />
+
+    <style>
+        * {
+            transition: all 0.3s;
+        }
+    </style>
+
+    <title>Theme Creator</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="page-title">
+            <a class="brand" href="index.htm">Website 02</a>
+            <span class="brand-detail">Theme Creator</span>
+        </div>
+        <div class="theme-picker">
+            <label for="theme-list">Theme</label>
+            <select id="theme-list" class="select-control" onchange="changeTheme()"></select>
+        </div>
+        <div class="right-navbar">
+            <ul class="icons-nav">
+                <li>
+                    <a class="link nav-link" href="../sample-site/index.htm" role="button">
+                        <span class="icon zmdi zmdi-palette"></span>
+                    </a>
+                </li>
+                <li class="user-image-nav-item user-avatar">
+                    <a class="nav-link" role="button">
+                        <img src="../themes/shared/logo.png" style="background-color: lightskyblue" alt="Avatar" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-head">
+        <h2 class="page-head-title">New Theme</h2>
+        <a class="btn btn-secondary" href="../sample-site/index.htm">Try the themes on Website 01</a>
+    </div>
+    <div class="main-content">
+
+        <div class="card">
+            <h2 style="margin: 0; padding: 16px 26px;">Set your theme preferences then click on "Add".</h2>
+            <div id="themeContainer">
+
+            </div>
+        </div>
+
+        <div style="text-align: right;" class="main-content-footer right-text">
+            <button type="button" style="margin: 0 8px 0 0;" class="btn btn-primary" onclick="addTheme()">Add</button>
+            <button type="button" style="margin: 0 8px 0 0;" class="btn btn-secondary" onclick="resetFields()">Empty
+                Fields</button>
+        </div>
+    </div>
+    <div class="trademark">© 2020 KOD by Mohammad™.</div>
+    <script src="../themes/shared/jquery-3.4.1.min.js"> </script>
+    <script src="../themes/shared/shared-script.js"> </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+@use "basic" with (
+    $theme-name: "Dark", 
+    $colors:("primary": #9db9e7, "secondary":#a0a0a0, "success": #7cc58f, "warning": #f8e099, "danger": #e09791),
+    $body-background-color: #161616,
+    $body-color: #fff,
+    $control-border-radius: 0px,
+    $control-box-shadow-color: rgba(255, 255, 255, .02),
+    $control-background-color: #000,
+    $primary-color: #000,
+    $secondary-color: #eee,
+    $border-color: #575757,
+    $icon-link-border-radius: 0%,
+    $headers-color: #d4d4d4,
+    $navbar-color: #000,
+    $table-odd-bg-color: #252525,
+    $table-hover-color: #fff,
+    $table-hover-bg-color: #333,
+    $table-border-color: #2b2c2e,
+    $detail-color: #a0a0a0,
+    $disabled-color: #a5a5a5,
+    $link-hover-color: #b0c5e6,
+    $link-focus-color: #85aae7
+);

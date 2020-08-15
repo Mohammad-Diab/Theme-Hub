@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../themes/shared/material-design-iconic-font/css/material-design-iconic-font.css" />
+    <link id="theme-css-link" rel="stylesheet" href="../themes/Light/Light.css" />
+    <title>Website 01</title>
+    <style>
+        * {
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="page-title">
+            <a class="brand" href="index.htm">Website 01</a>
+        </div>
+        <div class="theme-picker">
+            <label for="theme-list">Theme</label>
+            <select id="theme-list" class="select-control" onchange="changeTheme()"></select>
+        </div>
+        <div class="right-navbar">
+            <ul class="icons-nav">
+                <li>
+                    <a class="link nav-link" href="../theme-creator/index.htm" role="button">
+                        <span class="icon zmdi zmdi-settings"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link nav-link" role="button">
+                        <span class="icon zmdi zmdi-notifications"></span>
+                        <span class="indicator"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link nav-link" role="button">
+                        <span class="icon zmdi zmdi-apps"></span>
+                    </a>
+                </li>
+                <li class="user-image-nav-item user-avatar">
+                    <a class="nav-link" role="button">
+                        <img src="../themes/shared/logo.png" style="background-color: lightskyblue"
+                            alt="Avatar" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-head">
+        <h2 class="page-head-title">Users Page</h2>
+        <a class="btn btn-primary" href="../theme-creator/index.htm">Create a theme</a>
+    </div>
+    <div class="main-content">
+        <table class="table card" role="grid">
+            <thead>
+                <tr role="row">
+                    <th style="width: 60px;">
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check1" />
+                            <label class="custom-control-label" for="check1"></label>
+                        </div>
+                    </th>
+                    <th style="width: calc(30% - 60px);">
+                        Name & Position
+                    </th>
+                    <th style="width: 20%;">
+                        Info
+                    </th>
+                    <th style="width: 20%">
+                        Evaluation
+                    </th>
+                    <th style="width: 20%">
+                        Location
+                    </th>
+                    <th style="width: 10%">
+                        Current Task State
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="success" role="row" data-page="1">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check2" />
+                            <label class="custom-control-label" for="check2"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: burlywood;"
+                            alt="Avatar" />
+                        <span>Mohammad Diab</span>
+                        <span class="cell-detail-description">Developer</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>United States</span>
+                        <span class="cell-detail-description">(241) 584 8866</span>
+                    </td>
+                    <td class="milestone" data-progress="0,45">
+                        <span class="completed">8 / 15</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>May 6, 2018</span>
+                        <span class="cell-detail-description">8:30</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>Done</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="primary" role="row" data-page="1">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check3" />
+                            <label class="custom-control-label" for="check3"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: darkorchid;"
+                            alt="Avatar" />
+                        <span>Dr. Moh</span>
+                        <span class="cell-detail-description">Bug Surgeon</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>United States</span>
+                        <span class="cell-detail-description">(383) 840 3988</span>
+                    </td>
+                    <td class="milestone" data-progress="0,75">
+                        <span class="completed">22 / 30</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>April 22, 2018</span>
+                        <span class="cell-detail-description">14:45</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>To Do</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="danger" role="row" data-page="1">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check4" />
+                            <label class="custom-control-label" for="check4"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: darkturquoise;"
+                            alt="Avatar" />
+                        <span>Mo Hamad Commit</span>
+                        <span class="cell-detail-description">Developer</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Slovakia</span>
+                        <span class="cell-detail-description">(929) 765 4980</span>
+                    </td>
+                    <td class="milestone" data-progress="0,33">
+                        <span class="completed">10 / 30</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 33%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>April 15, 2018</span>
+                        <span class="cell-detail-description">10:00</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>In review</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="warning" role="row" data-page="1">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check5" />
+                            <label class="custom-control-label" for="check5"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: hotpink;"
+                            alt="Avatar" />
+                        <span>Diab Overflow</span>
+                        <span class="cell-detail-description">Stack Specialist</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Italy</span>
+                        <span class="cell-detail-description">(994) 478 8768</span>
+                    </td>
+                    <td class="milestone">
+                        <span class="completed">25 / 40</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 55%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span class="date">April 8, 2018</span>
+                        <span class="cell-detail-description">17:24</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>In progress</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="primary" role="row" data-page="1">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check6" />
+                            <label class="custom-control-label" for="check6"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: olive;"
+                            alt="Avatar" />
+                        <span>Hamoudeh Deploy</span>
+                        <span class="cell-detail-description">Friday Release Manager</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Greece</span>
+                        <span class="cell-detail-description">(594) 500 3150</span>
+                    </td>
+                    <td class="milestone" data-progress="0,98">
+                        <span class="completed">38 / 40</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 98%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span class="date">March 18, 2018</span>
+                        <span class="cell-detail-description">13:02</span>
+                    </td>
+                    <td class="text-right">
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>To Do</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="success" role="row" data-page="2" style="display: none;">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check7" />
+                            <label class="custom-control-label" for="check7"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: burlywood;"
+                            alt="Avatar" />
+                        <span>Mohammad Ctrl-Z</span>
+                        <span class="cell-detail-description">Designer</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>United States</span>
+                        <span class="cell-detail-description">(241) 584 8866</span>
+                    </td>
+                    <td class="milestone" data-progress="0,45">
+                        <span class="completed">8 / 15</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>May 6, 2018</span>
+                        <span class="cell-detail-description">8:30</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>Done</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="primary" role="row" data-page="2" style="display: none;">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check8" />
+                            <label class="custom-control-label" for="check8"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: darkorchid;"
+                            alt="Avatar" />
+                        <span>Diab 404</span>
+                        <span class="cell-detail-description">QA (Not Found)</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>United States</span>
+                        <span class="cell-detail-description">(383) 840 3988</span>
+                    </td>
+                    <td class="milestone" data-progress="0,75">
+                        <span class="completed">22 / 30</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>April 22, 2018</span>
+                        <span class="cell-detail-description">14:45</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>To Do</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="danger" role="row" data-page="2" style="display: none;">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check9" />
+                            <label class="custom-control-label" for="check9"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: darkturquoise;"
+                            alt="Avatar" />
+                        <span>Moe Merge-Conflict</span>
+                        <span class="cell-detail-description">Developer</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Slovakia</span>
+                        <span class="cell-detail-description">(929) 765 4980</span>
+                    </td>
+                    <td class="milestone" data-progress="0,33">
+                        <span class="completed">10 / 30</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 33%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span>April 15, 2018</span>
+                        <span class="cell-detail-description">10:00</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>In review</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="warning" role="row" data-page="2" style="display: none;">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check10" />
+                            <label class="custom-control-label" for="check10"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: hotpink;"
+                            alt="Avatar" />
+                        <span>Mohammad Null</span>
+                        <span class="cell-detail-description">Designer</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Italy</span>
+                        <span class="cell-detail-description">(994) 478 8768</span>
+                    </td>
+                    <td class="milestone">
+                        <span class="completed">25 / 40</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 55%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span class="date">April 8, 2018</span>
+                        <span class="cell-detail-description">17:24</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>In progress</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr class="primary" role="row" data-page="2" style="display: none;">
+                    <td>
+                        <div class="custom-control custom-checkbox">
+                            <input class="custom-control-input" type="checkbox" id="check11" />
+                            <label class="custom-control-label" for="check11"></label>
+                        </div>
+                    </td>
+                    <td class="user-avatar cell-detail user-info">
+                        <img src="../themes/shared/logo.png" style="background-color: olive;"
+                            alt="Avatar" />
+                        <span>Mr. Diab-ugger</span>
+                        <span class="cell-detail-description">Debugger</span>
+                    </td>
+                    <td class="cell-detail">
+                        <span>Greece</span>
+                        <span class="cell-detail-description">(594) 500 3150</span>
+                    </td>
+                    <td class="milestone" data-progress="0,98">
+                        <span class="completed">38 / 40</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 98%;"></div>
+                        </div>
+                    </td>
+                    <td class="cell-detail">
+                        <span class="date">March 18, 2018</span>
+                        <span class="cell-detail-description">13:02</span>
+                    </td>
+                    <td class="text-right">
+                        <button class="btn btn-small btn-secondary" type="button">
+                            <span>To Do</span>
+                            <span class="icon-dropdown zmdi zmdi-chevron-down"></span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="main-content-footer">
+
+            <div class="dataTables-info">
+                Showing 1 to 5 of 10 entries
+            </div>
+            <ul class="pagination">
+                <li id="page-previous" class="page-item disabled">
+                    <a class="page-link" href="#" onclick="showPage(currentPage - 1); return false;">Previous</a>
+                </li>
+                <li id="page-1" class="page-item active">
+                    <a class="page-link" href="#" onclick="showPage(1); return false;">1</a>
+                </li>
+                <li id="page-2" class="page-item">
+                    <a class="page-link" href="#" onclick="showPage(2); return false;">2</a>
+                </li>
+                <li id="page-next" class="page-item">
+                    <a class="page-link" href="#" onclick="showPage(currentPage + 1); return false;">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="trademark">© 2020 KOD by Mohammad™.</div>
+    <script src="../themes/shared/jquery-3.4.1.min.js"></script>
+    <script src="../themes/shared/shared-script.js"> </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

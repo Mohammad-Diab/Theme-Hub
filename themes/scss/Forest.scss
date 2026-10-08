@@ -1,0 +1,23 @@
+@use "basic" with (
+    $theme-name: "Forest", 
+    $colors: ("primary": #7fbf8e, "secondary":#a3b8a9, "success": #8fd19e, "warning": #e8d48b, "danger": #e39a8f),
+    $body-background-color: #14201a,
+    $body-color: #e8f0ea,
+    $control-border-radius: 4px,
+    $control-box-shadow-color: #ffffff08,
+    $control-background-color: #1b2a22,
+    $primary-color: #10261a,
+    $secondary-color: #dfeee3,
+    $border-color: #3c5546,
+    $icon-link-border-radius: 30%,
+    $headers-color: #b5d3bd,
+    $navbar-color: #0f1913,
+    $table-odd-bg-color: #1f3127,
+    $table-hover-color: #fff,
+    $table-hover-bg-color: #29402f,
+    $table-border-color: #2c4235,
+    $detail-color: #9bb5a3,
+    $disabled-color: #7d9585,
+    $link-hover-color: #a8dcb4,
+    $link-focus-color: #7fc790
+);

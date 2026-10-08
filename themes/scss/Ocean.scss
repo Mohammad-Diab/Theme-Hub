@@ -1,0 +1,23 @@
+@use "basic" with (
+    $theme-name: "Ocean", 
+    $colors: ("primary": #1f7ab8, "secondary":#4f6d84, "success": #2a9d8f, "warning": #e9b44c, "danger": #d1495b),
+    $body-background-color: #e6f0f7,
+    $body-color: #0b2537,
+    $control-border-radius: 6px,
+    $control-box-shadow-color: #0b25370f,
+    $control-background-color: #fff,
+    $primary-color: #fff,
+    $secondary-color: #1d4e6f,
+    $border-color: #b9d0e2,
+    $icon-link-border-radius: 50%,
+    $headers-color: #2f6690,
+    $navbar-color: #f5faff,
+    $table-odd-bg-color: #eef5fb,
+    $table-hover-color: #0b2537,
+    $table-hover-bg-color: #dcebf6,
+    $table-border-color: #c9dbe8,
+    $detail-color: #6b8aa3,
+    $disabled-color: #8aa1b3,
+    $link-hover-color: #1f8ac0,
+    $link-focus-color: #0f6fa3
+);
